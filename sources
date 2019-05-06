@@ -1,0 +1,23 @@
+TARGETNAME=native
+TARGETTYPE=PROGRAM
+UMTYPE=nt
+
+MINWIN_SDK_LIB_PATH=$(SDK_LIB_PATH)
+
+TARGETLIBS= $(DDK_LIB_PATH)\nt.lib
+
+INCLUDES=$(DDK_INC_PATH)
+
+SOURCES=display.c  \
+        file.c     \
+        hardware.c \
+        input.c    \
+        main.c     \
+        sysinfo.c  \
+    keytrans.c \
+    shell.c    \
+    process.c  \
+    ntfile.c   \
+    ntreg.c
+
+PRECOMPILED_INCLUDE=precomp.h
